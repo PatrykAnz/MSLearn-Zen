@@ -1,0 +1,21 @@
+{
+  "name": "MicroZen",
+  "description": "Enable zen mode for Microsoft Learn site",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "activate_zen.html",
+    "default_icon": "cloud.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://learn.microsoft.com/en-us/training/modules/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
