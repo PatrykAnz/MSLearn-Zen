@@ -1,6 +1,6 @@
 # MSLearn-Zen - Microsoft Learn Zen Mode Extension
 
-** Unofficial extension. Not affiliated with Microsoft.**
+* Unofficial extension. Not affiliated with Microsoft.*
 
 This Chrome extension makes Microsoft Learn training pages easier to read by removing clutter that doenst need to be used when learning. It also applies a custom dark theme.
 
