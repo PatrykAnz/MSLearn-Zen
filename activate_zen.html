@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 250px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+        }
+        .toggle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .toggle-button {
+            width: 100%;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .toggle-button.active {
+            background-color: #0078d4;
+            color: white;
+        }
+        .toggle-button.active:hover {
+            background-color: #106ebe;
+        }
+        .toggle-button.inactive {
+            background-color: #e1e1e1;
+            color: #333;
+        }
+        .toggle-button.inactive:hover {
+            background-color: #d1d1d1;
+        }
+        .status {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="toggle-container">
+        <button id="toggleBtn" class="toggle-button inactive">Enable Zen Mode</button>
+        <div id="status" class="status">Zen mode is OFF</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
+
