@@ -86,18 +86,22 @@
         if (observer) return;
         
         if (!document.body) {
+            var attempts = 0;
+            var maxAttempts = 100; // 5 seconds max
             var checkBody = setInterval(function() {
-                if (document.body) {
+                if (document.body || ++attempts >= maxAttempts) {
                     clearInterval(checkBody);
-                    observer = new MutationObserver(function(mutations) {
-                        if (zenModeEnabled) {
-                            removeElements();
-                        }
-                    });
-                    observer.observe(document.body, {
-                        childList: true,
-                        subtree: true
-                    });
+                    if (document.body) {
+                        observer = new MutationObserver(function(mutations) {
+                            if (zenModeEnabled) {
+                                removeElements();
+                            }
+                        });
+                        observer.observe(document.body, {
+                            childList: true,
+                            subtree: true
+                        });
+                    }
                 }
             }, 50);
             return;
