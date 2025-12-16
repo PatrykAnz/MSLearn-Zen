@@ -19,11 +19,11 @@ Below are the before and after views of a Microsoft Learn page with the extensio
 
 ### Before
 
-<img src="before.png" alt="Before enabling Zen Mode: default Microsoft Learn page with header, footer and feedback UI visible" width="420" />
+<img src="before.png" alt="Before enabling Zen Mode: default Microsoft Learn page with header, footer and feedback UI visible" />
 
 ### After
 
-<img src="after.png" alt="After enabling Zen Mode: simplified page with clutter removed and custom dark theme applied" width="420" />
+<img src="after.png" alt="After enabling Zen Mode: simplified page with clutter removed and custom dark theme applied" />
   
 ## How to install
 
