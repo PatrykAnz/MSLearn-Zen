@@ -13,6 +13,18 @@ This Chrome extension makes Microsoft Learn training pages easier to read by rem
   - Feedback section ("Was this page helpful?" section)
 - **Custom Dark Theme**
 
+## Screenshots
+
+Below are the before and after views of a Microsoft Learn page with the extension disabled vs enabled.
+
+### Before
+
+<img src="before.png" alt="Before enabling Zen Mode: default Microsoft Learn page with header, footer and feedback UI visible" width="420" />
+
+### After
+
+<img src="after.png" alt="After enabling Zen Mode: simplified page with clutter removed and custom dark theme applied" width="420" />
+  
 ## How to install
 
 ### For Chrome/Edge
